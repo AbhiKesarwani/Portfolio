@@ -47,4 +47,5 @@ export const socialLinks: SocialLink[] = [
   },
 ];
 
-export const expectedResumePath = "/resume/Abhinav4th_year.pdf";
+export const expectedResumePath = "/resume/Resume4thYear.pdf";
+export const resumeDownloadName = "Resume4thYear.pdf";

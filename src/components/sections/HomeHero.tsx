@@ -1,12 +1,21 @@
 import { Download, Github, Linkedin, Mail, Sparkles } from "lucide-react";
-import { socialLinks } from "../../data/navigation";
+import { socialLinks, resumeDownloadName } from "../../data/navigation";
 import { PrimaryLinkButton, SecondaryLinkButton } from "../ui/Button";
+import { useMouseParallax } from "../../hooks/useMouseParallax";
+import { useTypewriter } from "../../hooks/useTypewriter";
 
 type HomeHeroProps = {
   resumeHref: string | null;
 };
 
 const heroAssetPath = "/photo/profile/abhinav-hero.png";
+
+const heroKickerPhrases = [
+  "HELLO, I'M",
+  "AI ENGINEER",
+  "DATA SCIENCE BUILDER",
+  "GENAI & RAG DEVELOPER",
+];
 
 const metricItems = [
   { value: "8.90/10", label: "CGPA" },
@@ -17,10 +26,16 @@ const metricItems = [
 ];
 
 export function HomeHero({ resumeHref }: HomeHeroProps) {
+  const parallaxRef = useMouseParallax<HTMLDivElement>();
+  const { text: kickerText, prefersReducedMotion } = useTypewriter({ phrases: heroKickerPhrases });
+
   return (
     <section id="home" className="home-hero" aria-label="Home hero">
       <div className="hero-left">
-        <p className="hero-kicker">Hello, I&apos;m</p>
+        <p className="hero-kicker">
+          <span className="hero-kicker-text">{kickerText}</span>
+          {!prefersReducedMotion ? <span className="hero-kicker-cursor" aria-hidden="true" /> : null}
+        </p>
         <h1 className="hero-name">
           <span>Abhinav</span>
           <span className="accent">Kesarwani</span>
@@ -37,7 +52,11 @@ export function HomeHero({ resumeHref }: HomeHeroProps) {
           <PrimaryLinkButton href="#projects" ariaLabel="Explore my work">
             Explore My Work
           </PrimaryLinkButton>
-          <SecondaryLinkButton href={resumeHref ?? "/resume/Abhinav4th_year.pdf"} target="_blank" rel="noreferrer" ariaLabel="Download resume">
+          <SecondaryLinkButton
+            href={resumeHref ?? "/resume/Resume4thYear.pdf"}
+            download={resumeDownloadName}
+            ariaLabel="Download resume PDF"
+          >
             Download Resume <Download size={16} aria-hidden="true" />
           </SecondaryLinkButton>
         </div>
@@ -72,7 +91,8 @@ export function HomeHero({ resumeHref }: HomeHeroProps) {
         </div>
       </div>
 
-      <div className="hero-right" aria-hidden="true">
+      <div className="hero-right" aria-hidden="true" ref={parallaxRef}>
+        <div className="hero-glow-orb" />
         <img src="/photo/decorative/ai-orbit.png" alt="" className="hero-orbit-asset" />
         <div className="hero-orbit" />
         <div className="hero-code hero-code-top">

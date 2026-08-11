@@ -5,6 +5,8 @@ type ExperienceItem = {
   role: string;
   location: string;
   period: string;
+  logo: string;
+  logoAlt: string;
   highlights?: string[];
 };
 
@@ -14,6 +16,8 @@ const experienceItems: ExperienceItem[] = [
     role: "Technical Intern",
     location: "Pune, Maharashtra",
     period: "May 2026-Present",
+    logo: "/photo/experience/siemens-logo.svg",
+    logoAlt: "Siemens logo",
     highlights: [
       "Python-based Excel/report automation",
       "Reduced manual engineering effort by 6-7 hours per delivery",
@@ -25,17 +29,13 @@ const experienceItems: ExperienceItem[] = [
     role: "IT Intern",
     location: "Delhi, India",
     period: "May 2025-Jun 2025",
+    logo: "/photo/experience/dmrc-logo.svg",
+    logoAlt: "Delhi Metro Rail Corporation logo",
     highlights: [
       "Developed and deployed DMRC Indoor Navigation System",
       "Supporting 100+ daily visitors",
       "Automated trip-chart generation",
     ],
-  },
-  {
-    company: "Western Railway — DRM Vadodara",
-    role: "Internship",
-    location: "Vadodara, Gujarat",
-    period: "May 2024",
   },
 ];
 
@@ -54,8 +54,15 @@ export function ExperienceSection() {
             <span className="timeline-dot" aria-hidden="true" />
             <div className="timeline-card card-foundation card-standard">
               <header>
-                <h3>{item.company}</h3>
-                <p>{item.role}</p>
+                <div className="timeline-card-heading">
+                  <span className="timeline-logo-badge">
+                    <img src={item.logo} alt={item.logoAlt} className="timeline-logo" />
+                  </span>
+                  <div>
+                    <h3>{item.company}</h3>
+                    <p>{item.role}</p>
+                  </div>
+                </div>
               </header>
 
               <div className="timeline-meta">

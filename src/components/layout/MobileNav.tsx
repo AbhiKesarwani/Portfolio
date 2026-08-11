@@ -1,6 +1,6 @@
-import { Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import { useEffect, useRef } from "react";
-import { navItems } from "../../data/navigation";
+import { navItems, resumeDownloadName } from "../../data/navigation";
 import { PrimaryLinkButton } from "../ui/Button";
 import { SocialLinks } from "./SocialLinks";
 
@@ -92,8 +92,12 @@ export function MobileNav({ open, activeHref, resumeHref, onOpen, onClose }: Mob
 
         <div className="mobile-drawer-footer">
           <SocialLinks compact />
-          <PrimaryLinkButton href={resumeHref ?? "/resume/Abhinav4th_year.pdf"} target="_blank" rel="noreferrer" ariaLabel="Open resume">
-            Resume
+          <PrimaryLinkButton
+            href={resumeHref ?? "/resume/Resume4thYear.pdf"}
+            download={resumeDownloadName}
+            ariaLabel="Download resume PDF"
+          >
+            Resume <Download size={15} aria-hidden="true" />
           </PrimaryLinkButton>
         </div>
       </aside>

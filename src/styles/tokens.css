@@ -40,9 +40,6 @@
   --font-ui: "Plus Jakarta Sans", "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", Consolas, monospace;
 
-  --sidebar-width-desktop: 288px;
-  --sidebar-width-tablet: 236px;
-
   --transition-fast: 140ms ease;
   --transition-base: 260ms ease;
 }

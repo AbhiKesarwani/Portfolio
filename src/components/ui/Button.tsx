@@ -11,6 +11,8 @@ type AnchorProps = BaseButtonProps & {
   target?: string;
   rel?: string;
   ariaLabel?: string;
+  download?: string | boolean;
+  className?: string;
 };
 
 const join = (base: string, extra?: string) => (extra ? `${base} ${extra}` : base);
@@ -31,28 +33,30 @@ export function SecondaryButton({ children, className, ...props }: ButtonProps) 
   );
 }
 
-export function PrimaryLinkButton({ children, href, target, rel, ariaLabel }: AnchorProps) {
+export function PrimaryLinkButton({ children, href, target, rel, ariaLabel, download, className }: AnchorProps) {
   return (
     <a
       href={href}
       target={target}
       rel={rel}
       aria-label={ariaLabel}
-      className="btn btn-primary btn-link"
+      download={download}
+      className={join("btn btn-primary btn-link", className)}
     >
       {children}
     </a>
   );
 }
 
-export function SecondaryLinkButton({ children, href, target, rel, ariaLabel }: AnchorProps) {
+export function SecondaryLinkButton({ children, href, target, rel, ariaLabel, download, className }: AnchorProps) {
   return (
     <a
       href={href}
       target={target}
       rel={rel}
       aria-label={ariaLabel}
-      className="btn btn-secondary btn-link"
+      download={download}
+      className={join("btn btn-secondary btn-link", className)}
     >
       {children}
     </a>
