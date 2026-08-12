@@ -10,12 +10,7 @@ type HomeHeroProps = {
 
 const heroAssetPath = "/photo/profile/abhinav-hero.png";
 
-const heroKickerPhrases = [
-  "HELLO, I'M",
-  "AI ENGINEER",
-  "DATA SCIENCE BUILDER",
-  "GENAI & RAG DEVELOPER",
-];
+const heroKickerPhrases = ["HELLO, I'M"];
 
 const metricItems = [
   { value: "8.90/10", label: "CGPA" },

@@ -6,6 +6,7 @@ import { TopNav } from "./TopNav";
 import { ContactDock } from "./ContactDock";
 import { GlobalBackground } from "./GlobalBackground";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
+import { useCursorGlow } from "../../hooks/useCursorGlow";
 
 function getCurrentHash() {
   return navItems.some((item) => item.href === window.location.hash) ? window.location.hash : "#home";
@@ -17,6 +18,7 @@ export function AppShell() {
   const brandAsset: string | null = null;
 
   useScrollReveal();
+  useCursorGlow();
 
   useEffect(() => {
     setActiveHref(getCurrentHash());

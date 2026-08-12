@@ -60,9 +60,28 @@ export function SkillsSection() {
         <h2>Technology Ecosystem</h2>
       </div>
 
-      <figure className="skills-visual reveal-on-scroll" aria-label="Abhinav technical setup">
-        <img src="/photo/profile/abhinav-laptop.png" alt="Abhinav working on a laptop" className="skills-image" loading="lazy" />
-      </figure>
+      <div className="tech-visual reveal-on-scroll" aria-hidden="true">
+        <div className="tech-visual-grid" />
+        <svg className="tech-visual-lines" viewBox="0 0 600 220" preserveAspectRatio="none" focusable="false">
+          <line x1="58" y1="44" x2="216" y2="112" />
+          <line x1="216" y1="112" x2="378" y2="52" />
+          <line x1="216" y1="112" x2="336" y2="172" />
+          <line x1="378" y1="52" x2="518" y2="88" />
+          <line x1="336" y1="172" x2="500" y2="148" />
+          <line x1="58" y1="44" x2="148" y2="172" />
+        </svg>
+        <span className="tech-node tech-node-a" style={{ left: "10%", top: "20%" }} />
+        <span className="tech-node tech-node-b" style={{ left: "36%", top: "51%" }} />
+        <span className="tech-node tech-node-c" style={{ left: "63%", top: "24%" }} />
+        <span className="tech-node tech-node-d" style={{ left: "56%", top: "78%" }} />
+        <span className="tech-node tech-node-e" style={{ left: "86%", top: "40%" }} />
+        <span className="tech-node tech-node-f" style={{ left: "25%", top: "78%" }} />
+        <span className="tech-point" style={{ left: "18%", top: "66%" }} />
+        <span className="tech-point" style={{ left: "72%", top: "60%" }} />
+        <span className="tech-point" style={{ left: "48%", top: "16%" }} />
+        <div className="tech-fragment tech-fragment-a">const rag = retrieve(query);</div>
+        <div className="tech-fragment tech-fragment-b">model.infer(context)</div>
+      </div>
 
       <div className="skills-grid">
         {skillGroups.map((group) => {

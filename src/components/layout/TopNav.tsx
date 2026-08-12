@@ -14,10 +14,10 @@ const accentByLabel: Record<string, string> = {
   About: "cyan",
   Experience: "blue",
   Projects: "violet",
-  Research: "cyan",
-  Skills: "amber",
+  Research: "amber",
+  Skills: "teal",
   Achievements: "gold",
-  Contact: "emerald",
+  Contact: "magenta",
 };
 
 type PillRect = { left: number; width: number };
