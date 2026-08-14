@@ -6,10 +6,9 @@ type Achievement = {
 };
 
 const achievements: Achievement[] = [
-  { title: "2nd Place", detail: "University Hackathon" },
-  { title: "2nd Place", detail: "AI Hackathon" },
+  { title: "2nd Place", detail: "2 University Hackathons" },
   { title: "3rd Rank", detail: "HCL GUVI Scholarship" },
-  { title: "Workshop Lead", detail: "Conducted Power BI workshop for 40+ Indian Air Force officers" },
+  { title: "Power BI Session", detail: "Conducted a Power BI session for 40+ Indian Air Force officers." },
 ];
 
 export function AchievementsSection() {

@@ -1052,10 +1052,10 @@ a {
 
 .main-content {
   margin-left: 0;
-  width: min(100%, 1440px);
+  width: min(100%, 1360px);
   padding: 118px var(--space-9) var(--space-8);
   min-width: 0;
-  max-width: 1440px;
+  max-width: 1360px;
   margin-inline: auto;
   position: relative;
   border: 1px solid rgba(110, 191, 163, 0.22);
@@ -1828,16 +1828,19 @@ a {
 }
 
 .projects-grid {
-  --project-card-width: clamp(360px, 29vw, 430px);
-  display: flex;
+  --project-gap: var(--space-4);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(320px, 24vw, 348px);
   align-items: stretch;
-  gap: var(--space-4);
+  gap: var(--project-gap);
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
   scroll-behavior: smooth;
-  padding: 6px var(--space-5) var(--space-2) 2px;
-  margin: 0 calc(var(--space-5) * -1);
+  scroll-padding-inline: 2px;
+  padding: 6px 2px var(--space-2);
+  margin: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -1850,6 +1853,10 @@ a {
 .projects-carousel {
   position: relative;
   width: 100%;
+}
+
+.projects-section .section-head {
+  margin-bottom: var(--space-5);
 }
 
 .projects-carousel-shell {
@@ -1927,15 +1934,6 @@ a {
   transform: none;
 }
 
-.project-scroll-cue {
-  margin: 0 0 var(--space-3);
-  color: rgba(180, 198, 188, 0.8);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
 .project-card {
   direction: ltr;
   --section-accent: 74, 216, 173;
@@ -1946,9 +1944,9 @@ a {
   grid-template-rows: auto auto minmax(0, 1fr);
   gap: var(--space-3);
   align-content: start;
-  width: var(--project-card-width);
-  min-width: var(--project-card-width);
-  max-width: var(--project-card-width);
+  width: auto;
+  min-width: 0;
+  max-width: none;
   min-height: 560px;
   transform-style: preserve-3d;
   backdrop-filter: blur(9px);
@@ -1978,17 +1976,17 @@ a {
 }
 
 .project-card:hover {
-  transform: perspective(1000px) translate3d(0, -6px, 0) rotateX(1.6deg) rotateY(-1deg);
+  transform: perspective(1000px) translate3d(0, -3px, 0) rotateX(0.7deg);
   border-color: rgba(124, 237, 199, 0.6);
   box-shadow:
-    0 30px 54px rgba(0, 0, 0, 0.34),
-    0 14px 28px rgba(0, 0, 0, 0.25),
-    0 0 24px rgba(74, 216, 173, 0.2);
+    0 22px 40px rgba(0, 0, 0, 0.3),
+    0 10px 20px rgba(0, 0, 0, 0.22),
+    0 0 16px rgba(74, 216, 173, 0.16);
 }
 
 .projects-grid:hover .project-card {
-  opacity: 0.84;
-  filter: saturate(0.86) brightness(0.93);
+  opacity: 0.93;
+  filter: saturate(0.94) brightness(0.97);
 }
 
 .projects-grid:hover .project-card:hover {
@@ -2009,7 +2007,7 @@ a {
   color: var(--text-secondary);
   font-size: 15px;
   line-height: 1.66;
-  max-width: 30ch;
+  max-width: none;
 }
 
 .project-card:hover .project-card-top h3 {
@@ -2019,8 +2017,8 @@ a {
 
 .project-visual {
   position: relative;
-  min-height: 212px;
-  height: 212px;
+  min-height: 206px;
+  height: 206px;
   margin: 0;
   border-radius: 14px;
   border: 1px solid rgba(113, 196, 169, 0.24);
@@ -2035,8 +2033,8 @@ a {
 .project-image {
   width: 100%;
   height: 100%;
-  min-height: 194px;
-  object-fit: contain;
+  min-height: 188px;
+  object-fit: cover;
   object-position: center center;
   border-radius: 10px;
   transform-origin: center;
@@ -2218,7 +2216,7 @@ a {
   margin: var(--space-3) 0 0;
   color: var(--text-secondary);
   line-height: 1.64;
-  max-width: 70ch;
+  max-width: 100ch;
 }
 
 .publication-badge {
@@ -2580,7 +2578,7 @@ a {
 
 .achievements-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
   gap: var(--space-4);
   margin: 0;
@@ -2603,6 +2601,7 @@ a {
   max-width: none;
   min-height: 170px;
   display: grid;
+  grid-template-rows: auto auto 1fr;
   align-content: start;
   gap: var(--space-3);
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
@@ -2906,10 +2905,14 @@ a {
   margin-top: var(--space-8);
   padding: var(--space-5) 0 var(--space-8);
   border-top: 1px solid var(--border-subtle);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
   gap: var(--space-5);
+}
+
+.footer-left {
+  min-width: 0;
 }
 
 .footer-brand {
@@ -2923,6 +2926,7 @@ a {
   margin: var(--space-2) 0 0;
   color: var(--text-muted);
   font-size: 13px;
+  line-height: 1.55;
 }
 
 .footer-right {
@@ -3176,12 +3180,8 @@ a {
     width: min(100%, 248px);
   }
 
-  .achievements-grid {
-    --achievement-card-width: clamp(228px, 19vw, 252px);
-  }
-
   .projects-grid {
-    --project-card-width: clamp(360px, 42vw, 420px);
+    grid-auto-columns: clamp(312px, 25vw, 336px);
   }
 
   .hero-orbit-asset {
@@ -3249,9 +3249,9 @@ a {
   }
 
   .projects-grid {
-    --project-card-width: clamp(340px, 60vw, 380px);
-    margin: 0 calc(var(--space-4) * -1);
-    padding-right: var(--space-4);
+    grid-auto-columns: clamp(328px, 54vw, 372px);
+    margin: 0;
+    padding-right: 2px;
   }
 
   .project-card {
@@ -3476,6 +3476,7 @@ a {
   }
 
   .site-footer {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -3608,9 +3609,9 @@ a {
   }
 
   .projects-grid {
-    --project-card-width: min(79vw, 332px);
-    margin: 0 calc(var(--space-3) * -1);
-    padding-right: var(--space-3);
+    grid-auto-columns: minmax(286px, 88%);
+    margin: 0;
+    padding-right: 2px;
   }
 
   .project-carousel-controls {
@@ -3633,7 +3634,7 @@ a {
   }
 
   .project-card {
-    min-height: 530px;
+    min-height: 536px;
   }
 
   .project-card-top h3,

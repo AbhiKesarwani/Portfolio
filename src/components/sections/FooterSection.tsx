@@ -5,7 +5,7 @@ export function FooterSection() {
     <footer className="site-footer reveal-on-scroll" aria-label="Site footer">
       <div className="footer-left">
         <p className="footer-brand">AK / Abhinav Kesarwani</p>
-        <p className="footer-role">AI Engineer • LLM • RAG • Software Engineering</p>
+        <p className="footer-role">AI Engineer • Machine Learning • Deep Learning • Generative AI • LLMs • RAG</p>
       </div>
 
       <div className="footer-right">

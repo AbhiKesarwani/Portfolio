@@ -18,46 +18,53 @@ type ProjectCard = {
 const projects: ProjectCard[] = [
   {
     title: "AI-Powered Code Review",
-    description: "AI-assisted code review system with structural and policy-aware software assurance workflows.",
-    technologies: ["AST", "Graph Analysis", "GitHub Integration", "AWS", "Docker", "Kubernetes"],
+    description:
+      "AI-powered GitHub code review platform that analyzes pull requests using parallel AI agents for security, static analysis, code quality, style, and architecture issues, then delivers actionable findings directly to developers.",
+    technologies: ["Python", "AI", "LangGraph", "GitHub App", "AWS", "Docker", "Kubernetes", "PostgreSQL"],
     highlights: [
-      "AST + graph-based analysis",
-      "Security, reliability, maintainability, and compliance mapping",
-      "AI-assisted code review",
+      "Webhook-triggered PR analysis across security, style, architecture, and quality",
+      "Inline review comments, OWASP-focused checks, and secret/SQL injection detection",
+      "LangGraph orchestration with AWS Kubernetes-backed observability",
     ],
-    visualPath: "/photo/projects/code-reviewer.png",
+    visualPath: "/photo/projects/code-reviewer.svg",
+    links: {
+      github: "https://github.com/AbhiKesarwani/AI_Reviewer",
+    },
     featured: true,
   },
   {
     title: "SecureDocAI",
-    description: "Privacy-preserving offline Document Intelligence and RAG pipeline for enterprise knowledge retrieval.",
-    technologies: ["OCR", "FAISS", "BM25", "Cross-Encoder", "Local SLM"],
+    description:
+      "Privacy-preserving offline document intelligence system combining OCR, hybrid BM25 + vector retrieval, cross-encoder reranking, local LLMs, and evidence-based confidence scoring.",
+    technologies: ["OCR", "Hybrid Retrieval", "BM25", "Vector Search", "Reranking", "Offline AI"],
     highlights: [
-      "25+ enterprise documents",
-      "35K+ indexed chunks",
-      "125 benchmark questions",
-      "15+ evaluation metrics",
-      "Evidence-Based Confidence Scoring",
+      "Offline RAG workflows for private document intelligence",
+      "Evidence-grounded responses with confidence scoring",
+      "Semantic plus lexical retrieval for high-recall search",
     ],
-    visualPath: "/photo/projects/securedocai.png",
+    visualPath: "/photo/projects/securedocai.svg",
     featured: true,
   },
   {
     title: "AI Interview Coach",
-    description: "Pipecat-based real-time interview assistant for end-to-end conversational interview practice.",
-    technologies: ["Pipecat", "STT", "LLM", "TTS", "WebRTC"],
+    description:
+      "Real-time speech-to-speech AI interview platform that conducts contextual technical interviews using WebRTC, Deepgram STT, Groq LLM, and Cartesia TTS, with dynamic follow-up questions and an animated interviewer.",
+    technologies: ["React", "WebRTC", "Python", "FastAPI", "Deepgram", "Groq", "Cartesia", "Pipecat"],
     highlights: [
-      "Real-time AI interview system",
-      "Integrated STT + LLM + TTS pipeline",
-      "Low-latency WebRTC interaction",
+      "Context-aware technical interviews with dynamic follow-up questions",
+      "JD-aware generation with optional resume upload",
+      "Low-latency conversational pipeline via WebSockets and AsyncIO",
     ],
     visualPath: "/photo/projects/interview-coach.png",
+    links: {
+      github: "https://github.com/AbhiKesarwani/AI_Interview_Coach",
+    },
   },
   {
     title: "AI-Powered Academic Timetable Generator",
     description:
-      "An intelligent academic scheduling system that automatically generates conflict-free timetables using a Genetic Algorithm while considering faculty availability, subject credits, working hours, holidays, and existing timetables.",
-    technologies: ["Python", "Flask", "MySQL", "Jinja2", "JavaScript", "Genetic Algorithm"],
+      "Intelligent academic timetable generator that uses a Genetic Algorithm to create conflict-free schedules while considering faculty availability, subject credits, working hours, holidays, and cross-semester faculty constraints.",
+    technologies: ["Python", "Flask", "MySQL", "Genetic Algorithm", "JavaScript"],
     highlights: [
       "Genetic Algorithm scheduling",
       "Faculty conflict prevention",
@@ -69,8 +76,6 @@ const projects: ProjectCard[] = [
     visualPath: "/photo/projects/timetable-generator.svg",
     links: {
       liveDemo: "https://timetable-generator-genetic-algorit.vercel.app/",
-      demo:
-        "https://www.linkedin.com/posts/abhinav-kesarwani_python-flask-mysql-activity-7477956766601826304-eju1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIUa9IB1N78githf0Fv8-dUSg7-hw3D9hI",
       github: "https://github.com/AbhiKesarwani/Timetable_Generator_Genetic_Algorithm",
     },
   },
@@ -143,9 +148,6 @@ export function ProjectsSection() {
       </div>
 
       <div className="projects-carousel reveal-on-scroll">
-        <p className="project-scroll-cue" aria-hidden="true">
-          Scroll to explore more projects
-        </p>
         <div className="projects-carousel-shell">
           <div className="project-carousel-controls" aria-hidden="true">
             <button

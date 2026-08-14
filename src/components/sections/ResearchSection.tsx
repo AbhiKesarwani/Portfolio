@@ -24,10 +24,7 @@ export function ResearchSection() {
         <header className="research-header">
           <div>
             <h3>{researchData.title}</h3>
-            <p>
-              Data-driven accident analysis and safety improvement direction for Indian Railways,
-              aligned to applied technical research workflows.
-            </p>
+            <p>Data-driven accident analysis and safety improvement direction for Indian Railways, aligned to applied technical research workflows.</p>
           </div>
           <span className="publication-badge">
             <BadgeCheck size={14} /> Publication

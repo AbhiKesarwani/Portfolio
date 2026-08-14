@@ -1,85 +1,121 @@
-<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="120" y1="40" x2="1110" y2="690" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0C1E17"/>
-      <stop offset="1" stop-color="#08110D"/>
+    <linearGradient id="bg" x1="130" y1="60" x2="1470" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1D17"/>
+      <stop offset="1" stop-color="#07120E"/>
     </linearGradient>
-    <radialGradient id="pulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 150) rotate(132) scale(380 280)">
-      <stop stop-color="#72E6BF" stop-opacity="0.44"/>
-      <stop offset="1" stop-color="#72E6BF" stop-opacity="0"/>
+    <radialGradient id="pulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1260 170) rotate(130) scale(440 340)">
+      <stop stop-color="#73E7C1" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#73E7C1" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="line" x1="220" y1="210" x2="1050" y2="470" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6EDDB8" stop-opacity="0.6"/>
-      <stop offset="1" stop-color="#6EDDB8" stop-opacity="0.16"/>
-    </linearGradient>
-    <filter id="glow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="7"/>
-    </filter>
   </defs>
 
-  <rect width="1280" height="720" rx="30" fill="url(#bg)"/>
-  <rect width="1280" height="720" rx="30" fill="url(#pulse)"/>
+  <rect width="1600" height="1000" rx="34" fill="url(#bg)"/>
+  <rect width="1600" height="1000" rx="34" fill="url(#pulse)"/>
 
-  <g opacity="0.2">
-    <path d="M170 100H1120" stroke="#63D8B2" stroke-opacity="0.36"/>
-    <path d="M170 170H1120" stroke="#63D8B2" stroke-opacity="0.28"/>
-    <path d="M170 240H1120" stroke="#63D8B2" stroke-opacity="0.2"/>
-    <path d="M170 310H1120" stroke="#63D8B2" stroke-opacity="0.2"/>
-    <path d="M170 380H1120" stroke="#63D8B2" stroke-opacity="0.24"/>
-    <path d="M170 450H1120" stroke="#63D8B2" stroke-opacity="0.2"/>
-    <path d="M170 520H1120" stroke="#63D8B2" stroke-opacity="0.18"/>
-    <path d="M170 590H1120" stroke="#63D8B2" stroke-opacity="0.18"/>
+  <rect x="82" y="82" width="1436" height="836" rx="22" fill="#0A1712" stroke="#6FE4BD" stroke-opacity="0.22"/>
+  <rect x="82" y="82" width="1436" height="76" rx="22" fill="#10231C"/>
+  <circle cx="128" cy="120" r="8" fill="#87F6D2"/>
+  <circle cx="160" cy="120" r="8" fill="#56CFA3"/>
+  <circle cx="192" cy="120" r="8" fill="#3EA27F"/>
+  <text x="228" y="128" fill="#D9FFF0" font-family="Inter, Segoe UI, sans-serif" font-size="24" letter-spacing="0.5">AI-Powered Academic Timetable Generator</text>
 
-    <path d="M230 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
-    <path d="M360 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
-    <path d="M490 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
-    <path d="M620 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
-    <path d="M750 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
-    <path d="M880 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
-    <path d="M1010 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
-  </g>
+  <rect x="116" y="190" width="396" height="692" rx="16" fill="#0D1E17" stroke="#72E8C2" stroke-opacity="0.24"/>
+  <text x="146" y="226" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="19">Optimization Console</text>
 
-  <g>
-    <rect x="180" y="120" width="930" height="460" rx="20" fill="#0A1712" fill-opacity="0.7" stroke="#63D8B2" stroke-opacity="0.35"/>
-    <rect x="180" y="120" width="930" height="72" rx="20" fill="#0F231B" fill-opacity="0.85"/>
-    <circle cx="232" cy="156" r="8" fill="#7CEBC6" fill-opacity="0.9"/>
-    <circle cx="264" cy="156" r="8" fill="#56C89E" fill-opacity="0.9"/>
-    <circle cx="296" cy="156" r="8" fill="#3EA77F" fill-opacity="0.9"/>
+  <rect x="146" y="248" width="336" height="68" rx="10" fill="#122F25" stroke="#72E8C2" stroke-opacity="0.32"/>
+  <text x="166" y="276" fill="#E6FFF6" font-family="Inter, Segoe UI, sans-serif" font-size="14">Generation 148 / 250</text>
+  <text x="166" y="298" fill="#CDEBDC" font-family="Inter, Segoe UI, sans-serif" font-size="12">Fitness improving, zero hard conflicts</text>
 
-    <text x="334" y="163" fill="#D4FCEB" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="24" letter-spacing="0.4">ACADEMIC TIMETABLE GENERATOR</text>
+  <rect x="146" y="332" width="336" height="98" rx="10" fill="#10281F" stroke="#6FE4BD" stroke-opacity="0.24"/>
+  <text x="166" y="360" fill="#A2F6D8" font-family="Inter, Segoe UI, sans-serif" font-size="14">Constraint Set</text>
+  <text x="166" y="384" fill="#D4EDE1" font-family="Inter, Segoe UI, sans-serif" font-size="12">Faculty availability matrix</text>
+  <text x="166" y="404" fill="#D4EDE1" font-family="Inter, Segoe UI, sans-serif" font-size="12">Subject credit load and working hours</text>
 
-    <g opacity="0.95">
-      <rect x="220" y="224" width="222" height="64" rx="12" fill="#10241C" stroke="#6FE5BD" stroke-opacity="0.45"/>
-      <text x="242" y="252" fill="#8CF0CD" font-family="Inter, Segoe UI, sans-serif" font-size="16">Faculty Availability</text>
-      <text x="242" y="272" fill="#D1EADD" font-family="Inter, Segoe UI, sans-serif" font-size="13">Constraint Filter</text>
+  <rect x="146" y="446" width="336" height="128" rx="10" fill="#10281F" stroke="#6FE4BD" stroke-opacity="0.24"/>
+  <text x="166" y="474" fill="#A2F6D8" font-family="Inter, Segoe UI, sans-serif" font-size="14">Conflict Alerts</text>
+  <text x="166" y="498" fill="#F5AFAF" font-family="Inter, Segoe UI, sans-serif" font-size="12">Semester V - Room overlap resolved</text>
+  <text x="166" y="518" fill="#F8D39A" font-family="Inter, Segoe UI, sans-serif" font-size="12">Faculty CSE-12 load nearing threshold</text>
+  <text x="166" y="538" fill="#A3EFD0" font-family="Inter, Segoe UI, sans-serif" font-size="12">Cross-semester assignment balanced</text>
 
-      <rect x="478" y="224" width="222" height="64" rx="12" fill="#10241C" stroke="#6FE5BD" stroke-opacity="0.45"/>
-      <text x="500" y="252" fill="#8CF0CD" font-family="Inter, Segoe UI, sans-serif" font-size="16">Credit Distribution</text>
-      <text x="500" y="272" fill="#D1EADD" font-family="Inter, Segoe UI, sans-serif" font-size="13">Balanced Load Logic</text>
+  <rect x="146" y="590" width="336" height="264" rx="10" fill="#10281F" stroke="#6FE4BD" stroke-opacity="0.24"/>
+  <text x="166" y="618" fill="#A2F6D8" font-family="Inter, Segoe UI, sans-serif" font-size="14">GA Progress</text>
+  <rect x="166" y="640" width="292" height="16" rx="8" fill="#123126"/>
+  <rect x="166" y="640" width="230" height="16" rx="8" fill="#72E8C2"/>
+  <text x="166" y="680" fill="#D4EDE1" font-family="Inter, Segoe UI, sans-serif" font-size="12">Population size: 400</text>
+  <text x="166" y="700" fill="#D4EDE1" font-family="Inter, Segoe UI, sans-serif" font-size="12">Mutation rate: 0.08</text>
+  <text x="166" y="720" fill="#D4EDE1" font-family="Inter, Segoe UI, sans-serif" font-size="12">Current best fitness: 0.947</text>
+  <text x="166" y="740" fill="#D4EDE1" font-family="Inter, Segoe UI, sans-serif" font-size="12">Hard conflicts: 0</text>
+  <text x="166" y="760" fill="#D4EDE1" font-family="Inter, Segoe UI, sans-serif" font-size="12">Soft penalties: 4</text>
 
-      <rect x="736" y="224" width="334" height="64" rx="12" fill="#10241C" stroke="#6FE5BD" stroke-opacity="0.45"/>
-      <text x="758" y="252" fill="#8CF0CD" font-family="Inter, Segoe UI, sans-serif" font-size="16">Holiday + Existing Timetable Guardrails</text>
-      <text x="758" y="272" fill="#D1EADD" font-family="Inter, Segoe UI, sans-serif" font-size="13">Conflict-Free Slot Blocking</text>
-    </g>
+  <rect x="540" y="190" width="944" height="430" rx="16" fill="#0D1E17" stroke="#72E8C2" stroke-opacity="0.24"/>
+  <text x="570" y="226" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="19">Weekly Timetable View</text>
 
-    <g>
-      <rect x="220" y="326" width="420" height="214" rx="14" fill="#0E2018" stroke="#6FE5BD" stroke-opacity="0.28"/>
-      <text x="242" y="356" fill="#B9F6DE" font-family="Inter, Segoe UI, sans-serif" font-size="15">Genetic Algorithm Scheduler</text>
-      <text x="242" y="386" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Initialize population  ->  evaluate fitness  ->  crossover  ->  mutate</text>
-      <text x="242" y="411" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Penalty model: faculty clash, room overlap, semester conflict</text>
-      <text x="242" y="436" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Adaptive repair logic for impossible schedules</text>
+  <rect x="570" y="248" width="884" height="342" rx="10" fill="#0E241B" stroke="#6FE4BD" stroke-opacity="0.2"/>
+  <text x="596" y="276" fill="#CFF1E2" font-family="Inter, Segoe UI, sans-serif" font-size="12">Semester V</text>
+  <text x="752" y="276" fill="#CFF1E2" font-family="Inter, Segoe UI, sans-serif" font-size="12">Semester VI</text>
+  <text x="908" y="276" fill="#CFF1E2" font-family="Inter, Segoe UI, sans-serif" font-size="12">Semester VII</text>
+  <text x="1064" y="276" fill="#CFF1E2" font-family="Inter, Segoe UI, sans-serif" font-size="12">Semester VIII</text>
 
-      <rect x="710" y="326" width="360" height="214" rx="14" fill="#0E2018" stroke="#6FE5BD" stroke-opacity="0.28"/>
-      <text x="732" y="356" fill="#B9F6DE" font-family="Inter, Segoe UI, sans-serif" font-size="15">Published Timetables</text>
-      <text x="732" y="386" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Student Portal</text>
-      <text x="732" y="411" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Faculty Portal</text>
-      <text x="732" y="436" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Department Admin Console</text>
-      <text x="732" y="462" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Cross-semester conflict dashboard</text>
-    </g>
-  </g>
+  <rect x="596" y="302" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="610" y="330" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">ML Lab</text>
+  <text x="610" y="346" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Mon 10:00</text>
 
-  <g opacity="0.34" filter="url(#glow)">
-    <path d="M262 258H998" stroke="url(#line)" stroke-width="2"/>
-    <path d="M412 437H712" stroke="url(#line)" stroke-width="2"/>
-  </g>
+  <rect x="752" y="302" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="766" y="330" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">Distributed Systems</text>
+  <text x="766" y="346" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Mon 11:00</text>
+
+  <rect x="908" y="302" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="922" y="330" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">Data Mining</text>
+  <text x="922" y="346" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Mon 12:00</text>
+
+  <rect x="1064" y="302" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="1078" y="330" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">Project Seminar</text>
+  <text x="1078" y="346" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Mon 14:00</text>
+
+  <rect x="596" y="370" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="610" y="398" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">NLP</text>
+  <text x="610" y="414" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Tue 09:00</text>
+
+  <rect x="752" y="370" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="766" y="398" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">Compiler Design</text>
+  <text x="766" y="414" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Tue 10:00</text>
+
+  <rect x="908" y="370" width="136" height="52" rx="8" fill="#44231F" stroke="#F3A39D" stroke-opacity="0.45"/>
+  <text x="922" y="398" fill="#FFE4E1" font-family="Inter, Segoe UI, sans-serif" font-size="12">Faculty Clash</text>
+  <text x="922" y="414" fill="#F8C5BF" font-family="Inter, Segoe UI, sans-serif" font-size="11">Needs reassignment</text>
+
+  <rect x="1064" y="370" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="1078" y="398" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">Cloud Lab</text>
+  <text x="1078" y="414" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Tue 13:00</text>
+
+  <rect x="596" y="438" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="610" y="466" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">Computer Vision</text>
+  <text x="610" y="482" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Wed 10:00</text>
+
+  <rect x="752" y="438" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="766" y="466" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">DBMS</text>
+  <text x="766" y="482" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Wed 11:00</text>
+
+  <rect x="908" y="438" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="922" y="466" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">Software Testing</text>
+  <text x="922" y="482" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Wed 12:00</text>
+
+  <rect x="1064" y="438" width="136" height="52" rx="8" fill="#123126"/>
+  <text x="1078" y="466" fill="#DEFFF3" font-family="Inter, Segoe UI, sans-serif" font-size="12">Major Project</text>
+  <text x="1078" y="482" fill="#B9E7D3" font-family="Inter, Segoe UI, sans-serif" font-size="11">Wed 14:00</text>
+
+  <rect x="540" y="644" width="944" height="238" rx="16" fill="#0D1E17" stroke="#72E8C2" stroke-opacity="0.24"/>
+  <text x="570" y="680" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="19">Faculty Assignment and Publishing</text>
+  <text x="570" y="710" fill="#D6F0E3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Department CSE | 4 semesters | 0 unresolved hard conflicts | publish-ready</text>
+  <text x="570" y="734" fill="#D6F0E3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Auto-balanced cross-semester faculty load with holiday-aware scheduling windows.</text>
+
+  <rect x="570" y="760" width="220" height="44" rx="22" fill="#123126" stroke="#71E8C1" stroke-opacity="0.45"/>
+  <text x="616" y="788" fill="#E7FFF7" font-family="Inter, Segoe UI, sans-serif" font-size="14">Generate Schedule</text>
+
+  <rect x="810" y="760" width="220" height="44" rx="22" fill="#123126" stroke="#71E8C1" stroke-opacity="0.45"/>
+  <text x="870" y="788" fill="#E7FFF7" font-family="Inter, Segoe UI, sans-serif" font-size="14">Resolve Conflicts</text>
+
+  <rect x="1050" y="760" width="220" height="44" rx="22" fill="#123126" stroke="#71E8C1" stroke-opacity="0.45"/>
+  <text x="1109" y="788" fill="#E7FFF7" font-family="Inter, Segoe UI, sans-serif" font-size="14">Publish</text>
 </svg>
