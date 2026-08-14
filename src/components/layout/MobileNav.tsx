@@ -13,6 +13,7 @@ type MobileNavProps = {
 };
 
 export function MobileNav({ open, activeHref, resumeHref, onOpen, onClose }: MobileNavProps) {
+  const avatarSrc = "/photo/profile/abhinav-hero.png";
   const panelRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -45,7 +46,9 @@ export function MobileNav({ open, activeHref, resumeHref, onOpen, onClose }: Mob
     <>
       <header className="mobile-header">
         <div className="mobile-brand" aria-label="Abhinav Kesarwani">
-          <span className="mobile-brand-logo">AK</span>
+          <span className="mobile-brand-logo" aria-hidden="true">
+            <img src={avatarSrc} alt="Abhinav Kesarwani" className="mobile-brand-image" />
+          </span>
         </div>
         <button
           type="button"
