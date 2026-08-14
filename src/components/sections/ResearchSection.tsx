@@ -4,17 +4,13 @@ const researchData = {
   title: "Accident Analysis and Safety Improvements in Indian Railways",
   venue: "Accepted at ICICST 2026",
   proceedings: "SSRN Proceedings (Elsevier)",
-  backgroundPath: "/photo/backgrounds/research-data.png",
+  topics: ["Accident Analysis", "Railway Safety", "Applied Research"],
+  focusAreas: [
+    "Data-driven accident trend analysis",
+    "Safety improvement recommendation mapping",
+    "Applied research workflow alignment",
+  ],
 };
-
-function ResearchVisual() {
-  return (
-    <figure className="research-visual" aria-label="Research data visualization">
-      <img src={researchData.backgroundPath} alt="Research data visualization" className="research-image" loading="lazy" />
-      <div className="research-network" />
-    </figure>
-  );
-}
 
 export function ResearchSection() {
   return (
@@ -47,7 +43,20 @@ export function ResearchSection() {
           </span>
         </div>
 
-        <ResearchVisual />
+        <div className="research-topics" aria-label="Research topics">
+          {researchData.topics.map((topic) => (
+            <span key={topic}>{topic}</span>
+          ))}
+        </div>
+
+        <div className="research-focus-grid" aria-label="Research focus areas">
+          {researchData.focusAreas.map((area) => (
+            <article key={area} className="research-focus-item">
+              <h4>Research Focus</h4>
+              <p>{area}</p>
+            </article>
+          ))}
+        </div>
       </article>
     </section>
   );

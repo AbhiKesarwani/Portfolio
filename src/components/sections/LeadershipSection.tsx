@@ -9,8 +9,7 @@ const leadershipItems: LeadershipItem[] = [
   { role: "Placement Coordinator", org: "GSV" },
   { role: "Internship Coordinator", org: "GSV" },
   { role: "Head — Marketing & PR", org: "Hult Prize GSV" },
-  { role: "Marketing & PR", org: "Business Club" },
-  { role: "Programming Domain", org: "TechnoCrats GSV" },
+  { role: "Co-Coordinator — PR & Marketing", org: "Business Club, GSV" },
 ];
 
 export function LeadershipSection() {

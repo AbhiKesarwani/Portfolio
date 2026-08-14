@@ -36,11 +36,12 @@ export function HomeHero({ resumeHref }: HomeHeroProps) {
           <span className="accent">Kesarwani</span>
         </h1>
 
-        <p className="hero-role">AI Engineer | LLM &amp; RAG Developer | Software Engineer</p>
+        <p className="hero-role">
+          AI Engineer | Machine Learning | Deep Learning | Data Science | Software Engineer
+        </p>
 
         <p className="hero-intro">
-          I build practical AI systems focused on Generative AI, LLM workflows, and RAG-powered
-          applications that deliver reliable, intelligent software experiences.
+          I build practical AI systems across Machine Learning, Deep Learning, Data Analytics, LLMs, and RAG-powered applications.
         </p>
 
         <div className="hero-actions">

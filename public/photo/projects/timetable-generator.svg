@@ -1,0 +1,85 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1110" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1E17"/>
+      <stop offset="1" stop-color="#08110D"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 150) rotate(132) scale(380 280)">
+      <stop stop-color="#72E6BF" stop-opacity="0.44"/>
+      <stop offset="1" stop-color="#72E6BF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="220" y1="210" x2="1050" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EDDB8" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#6EDDB8" stop-opacity="0.16"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="30" fill="url(#bg)"/>
+  <rect width="1280" height="720" rx="30" fill="url(#pulse)"/>
+
+  <g opacity="0.2">
+    <path d="M170 100H1120" stroke="#63D8B2" stroke-opacity="0.36"/>
+    <path d="M170 170H1120" stroke="#63D8B2" stroke-opacity="0.28"/>
+    <path d="M170 240H1120" stroke="#63D8B2" stroke-opacity="0.2"/>
+    <path d="M170 310H1120" stroke="#63D8B2" stroke-opacity="0.2"/>
+    <path d="M170 380H1120" stroke="#63D8B2" stroke-opacity="0.24"/>
+    <path d="M170 450H1120" stroke="#63D8B2" stroke-opacity="0.2"/>
+    <path d="M170 520H1120" stroke="#63D8B2" stroke-opacity="0.18"/>
+    <path d="M170 590H1120" stroke="#63D8B2" stroke-opacity="0.18"/>
+
+    <path d="M230 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
+    <path d="M360 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
+    <path d="M490 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
+    <path d="M620 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
+    <path d="M750 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
+    <path d="M880 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
+    <path d="M1010 80V620" stroke="#63D8B2" stroke-opacity="0.16"/>
+  </g>
+
+  <g>
+    <rect x="180" y="120" width="930" height="460" rx="20" fill="#0A1712" fill-opacity="0.7" stroke="#63D8B2" stroke-opacity="0.35"/>
+    <rect x="180" y="120" width="930" height="72" rx="20" fill="#0F231B" fill-opacity="0.85"/>
+    <circle cx="232" cy="156" r="8" fill="#7CEBC6" fill-opacity="0.9"/>
+    <circle cx="264" cy="156" r="8" fill="#56C89E" fill-opacity="0.9"/>
+    <circle cx="296" cy="156" r="8" fill="#3EA77F" fill-opacity="0.9"/>
+
+    <text x="334" y="163" fill="#D4FCEB" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="24" letter-spacing="0.4">ACADEMIC TIMETABLE GENERATOR</text>
+
+    <g opacity="0.95">
+      <rect x="220" y="224" width="222" height="64" rx="12" fill="#10241C" stroke="#6FE5BD" stroke-opacity="0.45"/>
+      <text x="242" y="252" fill="#8CF0CD" font-family="Inter, Segoe UI, sans-serif" font-size="16">Faculty Availability</text>
+      <text x="242" y="272" fill="#D1EADD" font-family="Inter, Segoe UI, sans-serif" font-size="13">Constraint Filter</text>
+
+      <rect x="478" y="224" width="222" height="64" rx="12" fill="#10241C" stroke="#6FE5BD" stroke-opacity="0.45"/>
+      <text x="500" y="252" fill="#8CF0CD" font-family="Inter, Segoe UI, sans-serif" font-size="16">Credit Distribution</text>
+      <text x="500" y="272" fill="#D1EADD" font-family="Inter, Segoe UI, sans-serif" font-size="13">Balanced Load Logic</text>
+
+      <rect x="736" y="224" width="334" height="64" rx="12" fill="#10241C" stroke="#6FE5BD" stroke-opacity="0.45"/>
+      <text x="758" y="252" fill="#8CF0CD" font-family="Inter, Segoe UI, sans-serif" font-size="16">Holiday + Existing Timetable Guardrails</text>
+      <text x="758" y="272" fill="#D1EADD" font-family="Inter, Segoe UI, sans-serif" font-size="13">Conflict-Free Slot Blocking</text>
+    </g>
+
+    <g>
+      <rect x="220" y="326" width="420" height="214" rx="14" fill="#0E2018" stroke="#6FE5BD" stroke-opacity="0.28"/>
+      <text x="242" y="356" fill="#B9F6DE" font-family="Inter, Segoe UI, sans-serif" font-size="15">Genetic Algorithm Scheduler</text>
+      <text x="242" y="386" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Initialize population  ->  evaluate fitness  ->  crossover  ->  mutate</text>
+      <text x="242" y="411" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Penalty model: faculty clash, room overlap, semester conflict</text>
+      <text x="242" y="436" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Adaptive repair logic for impossible schedules</text>
+
+      <rect x="710" y="326" width="360" height="214" rx="14" fill="#0E2018" stroke="#6FE5BD" stroke-opacity="0.28"/>
+      <text x="732" y="356" fill="#B9F6DE" font-family="Inter, Segoe UI, sans-serif" font-size="15">Published Timetables</text>
+      <text x="732" y="386" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Student Portal</text>
+      <text x="732" y="411" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Faculty Portal</text>
+      <text x="732" y="436" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Department Admin Console</text>
+      <text x="732" y="462" fill="#D8EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="13">Cross-semester conflict dashboard</text>
+    </g>
+  </g>
+
+  <g opacity="0.34" filter="url(#glow)">
+    <path d="M262 258H998" stroke="url(#line)" stroke-width="2"/>
+    <path d="M412 437H712" stroke="url(#line)" stroke-width="2"/>
+  </g>
+</svg>

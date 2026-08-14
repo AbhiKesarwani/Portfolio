@@ -8,7 +8,6 @@ type Certification = {
 const certifications: Certification[] = [
   { title: "Applications of AI for Predictive Maintenance", issuer: "NVIDIA" },
   { title: "Fundamentals of Deep Learning", issuer: "NVIDIA" },
-  { title: "Computer Vision for Industrial Inspection", issuer: "NVIDIA" },
   { title: "Artificial Intelligence Fundamentals", issuer: "IBM" },
   { title: "Generative AI Fundamentals", issuer: "IBM" },
 ];

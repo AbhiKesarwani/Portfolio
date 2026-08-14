@@ -32,6 +32,7 @@ function Ripple({ x, y, onDone }: { x: number; y: number; onDone: () => void }) 
 }
 
 export function TopNav({ activeHref, resumeHref, brandAsset }: TopNavProps) {
+  const avatarSrc = brandAsset ?? "/photo/profile/abhinav-hero.png";
   const [scrolled, setScrolled] = useState(false);
   const listRef = useRef<HTMLUListElement | null>(null);
   const [pillRect, setPillRect] = useState<PillRect | null>(null);
@@ -82,13 +83,9 @@ export function TopNav({ activeHref, resumeHref, brandAsset }: TopNavProps) {
     <header className="top-nav-wrap">
       <div className={scrolled ? "top-nav is-scrolled" : "top-nav"}>
         <a href="#home" className="top-nav-brand" aria-label="Abhinav Kesarwani home">
-          {brandAsset ? (
-            <img src={brandAsset} alt="AK logo" className="top-nav-brand-image" />
-          ) : (
-            <span className="top-nav-brand-mark" aria-hidden="true">
-              AK
-            </span>
-          )}
+          <span className="top-nav-brand-avatar-wrap" aria-hidden="true">
+            <img src={avatarSrc} alt="Abhinav Kesarwani" className="top-nav-brand-image" />
+          </span>
           <span className="top-nav-brand-text">Abhinav Kesarwani</span>
         </a>
 
