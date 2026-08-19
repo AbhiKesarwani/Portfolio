@@ -15,12 +15,16 @@ export function FooterSection() {
           </div>
 
           <nav className="footer-nav" aria-label="Footer navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#research">Research</a>
-            <a href="#achievements">Achievements</a>
+            <div className="footer-nav-row footer-nav-row-primary">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#experience">Experience</a>
+              <a href="#projects">Projects</a>
+              <a href="#research">Research</a>
+            </div>
+            <div className="footer-nav-row footer-nav-row-secondary">
+              <a href="#achievements">Achievements</a>
+            </div>
           </nav>
         </div>
 

@@ -3078,7 +3078,18 @@ a {
   border-left: 1px solid transparent;
   border-bottom: 1px solid transparent;
   transform: rotate(-16deg);
+  transform-origin: 50% 50%;
+  animation: footer-orbit-spin 10.5s linear infinite;
   pointer-events: none;
+}
+
+@keyframes footer-orbit-spin {
+  from {
+    transform: rotate(-16deg);
+  }
+  to {
+    transform: rotate(344deg);
+  }
 }
 
 .footer-emblem-mark {
@@ -3109,12 +3120,28 @@ a {
   z-index: 1;
   justify-self: end;
   max-width: min(100%, 430px);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
+  display: grid;
+  justify-items: end;
   row-gap: 8px;
+}
+
+.footer-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   column-gap: 14px;
+}
+
+.footer-nav-row-primary {
+  flex-wrap: nowrap;
+}
+
+.footer-nav-row-primary a:last-child::after {
+  display: none;
+}
+
+.footer-nav-row-secondary {
+  justify-self: center;
 }
 
 .footer-nav a {
@@ -3154,6 +3181,7 @@ a {
   background: rgba(105, 216, 79, 0.3);
 }
 
+.footer-nav-row-secondary a::after,
 .footer-nav a:last-child::after {
   display: none;
 }
@@ -3764,10 +3792,17 @@ a {
 
   .footer-nav {
     grid-column: 1 / -1;
-    justify-self: start;
+    justify-self: center;
     max-width: 100%;
-    justify-content: flex-start;
-    column-gap: 12px;
+    justify-items: center;
+  }
+
+  .footer-nav-row {
+    column-gap: 2px;
+  }
+
+  .footer-nav-row-primary {
+    flex-wrap: nowrap;
   }
 
   .footer-meta {
@@ -3813,17 +3848,27 @@ a {
     grid-column: auto;
     justify-self: center;
     width: 100%;
-    justify-content: center;
-    column-gap: 10px;
+    justify-items: center;
     row-gap: 6px;
   }
 
+  .footer-nav-row {
+    column-gap: 2px;
+  }
+
+  .footer-nav-row-primary {
+    flex-wrap: nowrap;
+  }
+
   .footer-nav a {
-    font-size: 12px;
+    font-size: 8.75px;
+    letter-spacing: 0;
   }
 
   .footer-nav a::after {
-    margin-left: 8px;
+    width: 1px;
+    height: 1px;
+    margin-left: 2px;
   }
 
   .footer-meta {
@@ -4103,6 +4148,10 @@ a {
   }
 
   .tech-logo-chip.is-active {
+    animation: none;
+  }
+
+  .footer-emblem::after {
     animation: none;
   }
 
