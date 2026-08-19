@@ -19,9 +19,8 @@ const experienceItems: ExperienceItem[] = [
     logo: "/photo/experience/siemens-logo.svg",
     logoAlt: "Siemens logo",
     highlights: [
-      "Python-based Excel/report automation",
-      "Reduced manual engineering effort by 6-7 hours per delivery",
-      "Contributing to AI-assisted intelligent code review platform",
+      "Delivered five engineering automation and software projects across engineering workflows",
+      "Reduced project execution time by ~15% while reducing manual intervention",
     ],
   },
   {
@@ -59,8 +58,8 @@ export function ExperienceSection() {
                     <img src={item.logo} alt={item.logoAlt} className="timeline-logo" />
                   </span>
                   <div>
-                    <h3>{item.company}</h3>
-                    <p>{item.role}</p>
+                    <h3>{item.role}</h3>
+                    <p>{item.company}</p>
                   </div>
                 </div>
               </header>

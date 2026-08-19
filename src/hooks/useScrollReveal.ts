@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 
-export function useScrollReveal(selector = ".reveal-on-scroll") {
+const SECTION_REVEAL_SELECTOR =
+  ".home-hero, .about-section, .experience-section, .projects-section, .research-section, .skills-section, .achievements-section, .leadership-section, .certifications-section, .contact-section, .site-footer";
+
+export function useScrollReveal(selector = SECTION_REVEAL_SELECTOR) {
   useEffect(() => {
     const elements = Array.from(document.querySelectorAll<HTMLElement>(selector));
     if (elements.length === 0) {
@@ -17,8 +20,8 @@ export function useScrollReveal(selector = ".reveal-on-scroll") {
         });
       },
       {
-        threshold: 0.14,
-        rootMargin: "0px 0px -6% 0px",
+        threshold: 0.12,
+        rootMargin: "0px 0px -8% 0px",
       }
     );
 

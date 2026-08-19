@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, Database, FileText, GitBranch, ShieldCheck } from "lucide-react";
+import { ChevronLeft, ChevronRight, Database, ExternalLink, FileText, GitBranch, Github, ShieldCheck } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 type ProjectCard = {
@@ -19,7 +19,7 @@ const projects: ProjectCard[] = [
   {
     title: "AI-Powered Code Review",
     description:
-      "AI-powered GitHub code review platform that analyzes pull requests using parallel AI agents for security, static analysis, code quality, style, and architecture issues, then delivers actionable findings directly to developers.",
+      "AI-powered GitHub code review platform that analyzes pull requests using parallel AI agents for security, code quality, maintainability, and architectural issues, then delivers actionable findings with compliance-aware insights.",
     technologies: ["Python", "AI", "LangGraph", "GitHub App", "AWS", "Docker", "Kubernetes", "PostgreSQL"],
     highlights: [
       "Webhook-triggered PR analysis across security, style, architecture, and quality",
@@ -79,6 +79,21 @@ const projects: ProjectCard[] = [
       github: "https://github.com/AbhiKesarwani/Timetable_Generator_Genetic_Algorithm",
     },
   },
+  {
+    title: "Campus Event & Club Resource Management System",
+    description:
+      "Production-ready Flask + MySQL platform for managing campus clubs, events, attendance, certificates, resources, and communication with role-based access and AI-assisted Campus Connect.",
+    technologies: ["Python", "Flask", "MySQL", "JavaScript", "AI"],
+    highlights: [
+      "Role-based workflows for Students, Club Coordinators, and Admins",
+      "Event, club, venue, and resource management with OTP attendance and certificates",
+      "Campus Connect, recommendations, notifications, analytics, calendar, and global search",
+    ],
+    visualPath: "/photo/projects/campus.png",
+    links: {
+      github: "https://github.com/AbhiKesarwani/CampusEventsClubResourceManagementSystem",
+    },
+  },
 ];
 
 const carouselProjects = projects;
@@ -86,7 +101,7 @@ const carouselProjects = projects;
 function ProjectVisual({ path, title }: { path: string; title: string }) {
   return (
     <figure className="project-visual" aria-label={`${title} preview`}>
-      <img src={path} alt={`${title} project preview`} className="project-image" loading="lazy" />
+      <img src={path} alt={`${title} project preview`} className="project-image" loading="eager" />
     </figure>
   );
 }
@@ -206,18 +221,18 @@ export function ProjectsSection() {
                   {project.links ? (
                     <div className="project-resource-links" aria-label={`${project.title} links`}>
                       {project.links.liveDemo ? (
-                        <a href={project.links.liveDemo} target="_blank" rel="noreferrer">
-                          Live Demo
+                        <a href={project.links.liveDemo} target="_blank" rel="noreferrer" className="project-link-primary">
+                          <ExternalLink size={11} aria-hidden="true" /> Live Demo
                         </a>
                       ) : null}
                       {project.links.demo ? (
-                        <a href={project.links.demo} target="_blank" rel="noreferrer">
-                          Demo
+                        <a href={project.links.demo} target="_blank" rel="noreferrer" className="project-link-primary">
+                          <ExternalLink size={11} aria-hidden="true" /> Demo
                         </a>
                       ) : null}
                       {project.links.github ? (
-                        <a href={project.links.github} target="_blank" rel="noreferrer">
-                          GitHub
+                        <a href={project.links.github} target="_blank" rel="noreferrer" className="project-link-secondary">
+                          <Github size={11} aria-hidden="true" /> GitHub
                         </a>
                       ) : null}
                     </div>
