@@ -1,0 +1,75 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="50" x2="1460" y2="950" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1D17"/>
+      <stop offset="1" stop-color="#07120E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1260 180) rotate(130) scale(430 330)">
+      <stop stop-color="#71E5BE" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#71E5BE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" rx="34" fill="url(#bg)"/>
+  <rect width="1600" height="1000" rx="34" fill="url(#glow)"/>
+
+  <rect x="82" y="82" width="1436" height="836" rx="22" fill="#0A1712" stroke="#6FE4BD" stroke-opacity="0.22"/>
+  <rect x="82" y="82" width="1436" height="76" rx="22" fill="#10231C"/>
+  <circle cx="128" cy="120" r="8" fill="#87F6D2"/>
+  <circle cx="160" cy="120" r="8" fill="#56CFA3"/>
+  <circle cx="192" cy="120" r="8" fill="#3EA27F"/>
+  <text x="228" y="128" fill="#D9FFF0" font-family="Inter, Segoe UI, sans-serif" font-size="24" letter-spacing="0.5">SecureDocAI - Offline Document Intelligence</text>
+
+  <rect x="116" y="190" width="546" height="692" rx="16" fill="#0D1E17" stroke="#72E8C2" stroke-opacity="0.24"/>
+  <text x="146" y="226" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="19">Document Workspace</text>
+  <rect x="146" y="246" width="486" height="606" rx="12" fill="#0F251C" stroke="#6BE0BA" stroke-opacity="0.2"/>
+
+  <rect x="168" y="274" width="442" height="40" rx="8" fill="#143126"/>
+  <text x="188" y="299" fill="#D8F9EB" font-family="Inter, Segoe UI, sans-serif" font-size="14">Railway_Incident_Reports_2024.pdf</text>
+
+  <rect x="168" y="332" width="442" height="492" rx="8" fill="#0C1A14"/>
+  <text x="188" y="364" fill="#B9E9D4" font-family="Inter, Segoe UI, sans-serif" font-size="13">OCR Extract Preview</text>
+  <text x="188" y="396" fill="#D0E8DD" font-family="Inter, Segoe UI, sans-serif" font-size="12">Section 5.3 - Signal failure incidents indicate peak-risk windows</text>
+  <text x="188" y="420" fill="#D0E8DD" font-family="Inter, Segoe UI, sans-serif" font-size="12">on mixed traffic corridors with delayed maintenance handoff.</text>
+  <text x="188" y="456" fill="#D0E8DD" font-family="Inter, Segoe UI, sans-serif" font-size="12">OCR confidence: 98.1% | Language model: local quantized runtime</text>
+  <text x="188" y="492" fill="#D0E8DD" font-family="Inter, Segoe UI, sans-serif" font-size="12">Named entities extracted: stations, train IDs, route segments</text>
+
+  <rect x="692" y="190" width="792" height="228" rx="16" fill="#0D1E17" stroke="#72E8C2" stroke-opacity="0.24"/>
+  <text x="722" y="226" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="19">Offline Query and Retrieval</text>
+
+  <rect x="722" y="248" width="732" height="48" rx="10" fill="#123126" stroke="#74E8C3" stroke-opacity="0.36"/>
+  <text x="744" y="278" fill="#E5FFF6" font-family="Inter, Segoe UI, sans-serif" font-size="14">Query: Which maintenance patterns correlate with repeat derailment incidents?</text>
+
+  <rect x="722" y="314" width="234" height="80" rx="10" fill="#112A21" stroke="#6FE4BD" stroke-opacity="0.28"/>
+  <text x="742" y="342" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="14">Hybrid Retrieval</text>
+  <text x="742" y="366" fill="#D4EEE2" font-family="Inter, Segoe UI, sans-serif" font-size="12">BM25 + Vector Search</text>
+
+  <rect x="972" y="314" width="234" height="80" rx="10" fill="#112A21" stroke="#6FE4BD" stroke-opacity="0.28"/>
+  <text x="992" y="342" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="14">Cross-Encoder Rerank</text>
+  <text x="992" y="366" fill="#D4EEE2" font-family="Inter, Segoe UI, sans-serif" font-size="12">Passage relevance scoring</text>
+
+  <rect x="1222" y="314" width="232" height="80" rx="10" fill="#112A21" stroke="#6FE4BD" stroke-opacity="0.28"/>
+  <text x="1242" y="342" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="14">Local Inference</text>
+  <text x="1242" y="366" fill="#D4EEE2" font-family="Inter, Segoe UI, sans-serif" font-size="12">Air-gapped deployment</text>
+
+  <rect x="692" y="442" width="792" height="440" rx="16" fill="#0D1E17" stroke="#72E8C2" stroke-opacity="0.24"/>
+  <text x="722" y="478" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="19">Answer With Evidence</text>
+
+  <rect x="722" y="500" width="496" height="164" rx="10" fill="#10281F" stroke="#73E7C1" stroke-opacity="0.25"/>
+  <text x="742" y="530" fill="#DFFEF2" font-family="Inter, Segoe UI, sans-serif" font-size="14">Grounded Response</text>
+  <text x="742" y="556" fill="#D0E8DD" font-family="Inter, Segoe UI, sans-serif" font-size="12">Recurring derailments are linked to delayed turnout inspection cycles and</text>
+  <text x="742" y="578" fill="#D0E8DD" font-family="Inter, Segoe UI, sans-serif" font-size="12">incomplete signaling audits across mixed traffic sections. Recommended action:</text>
+  <text x="742" y="600" fill="#D0E8DD" font-family="Inter, Segoe UI, sans-serif" font-size="12">prioritize preventive maintenance windows and enforce escalation checkpoints.</text>
+
+  <rect x="1240" y="500" width="214" height="164" rx="10" fill="#10281F" stroke="#73E7C1" stroke-opacity="0.25"/>
+  <text x="1260" y="530" fill="#C1FADC" font-family="Inter, Segoe UI, sans-serif" font-size="14">Confidence</text>
+  <text x="1260" y="566" fill="#E9FFF6" font-family="Inter, Segoe UI, sans-serif" font-size="36" font-weight="700">0.91</text>
+  <text x="1260" y="596" fill="#CDE9DC" font-family="Inter, Segoe UI, sans-serif" font-size="12">Evidence-backed</text>
+
+  <rect x="722" y="684" width="732" height="172" rx="10" fill="#10281F" stroke="#73E7C1" stroke-opacity="0.25"/>
+  <text x="742" y="714" fill="#C1FADC" font-family="Inter, Segoe UI, sans-serif" font-size="14">Retrieved Evidence Chunks</text>
+  <text x="742" y="742" fill="#D5EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="12">1. Incident Log 2024 Q2 - Track switch inspections delayed at high-density junctions.</text>
+  <text x="742" y="766" fill="#D5EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="12">2. Audit Memo 17B - Signal relay calibration skipped during maintenance backlog.</text>
+  <text x="742" y="790" fill="#D5EFE3" font-family="Inter, Segoe UI, sans-serif" font-size="12">3. Safety Bulletin 11 - Repeat faults reduced after preventive scheduling compliance.</text>
+  <text x="742" y="822" fill="#9EEFD0" font-family="Inter, Segoe UI, sans-serif" font-size="12">Storage mode: local encrypted index | External network access: disabled</text>
+</svg>

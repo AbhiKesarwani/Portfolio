@@ -1,0 +1,95 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="70" x2="1490" y2="950" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1C17"/>
+      <stop offset="1" stop-color="#07120E"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1310 140) rotate(130) scale(420 320)">
+      <stop stop-color="#72E6BF" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#72E6BF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="360" y1="355" x2="1030" y2="355" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#71E8C1" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#71E8C1" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" rx="34" fill="url(#bg)"/>
+  <rect width="1600" height="1000" rx="34" fill="url(#pulse)"/>
+
+  <rect x="86" y="84" width="1428" height="832" rx="22" fill="#0A1712" stroke="#6CE1BB" stroke-opacity="0.22"/>
+
+  <rect x="86" y="84" width="1428" height="76" rx="22" fill="#10231C"/>
+  <circle cx="132" cy="122" r="8" fill="#82F3CD"/>
+  <circle cx="164" cy="122" r="8" fill="#59D2A6"/>
+  <circle cx="196" cy="122" r="8" fill="#3EA480"/>
+  <text x="232" y="129" fill="#D9FFF0" font-family="Inter, Segoe UI, sans-serif" font-size="24" letter-spacing="0.6">AI Code Reviewer - Pull Request Analysis</text>
+
+  <rect x="120" y="192" width="300" height="688" rx="16" fill="#0E2019" stroke="#70E3BD" stroke-opacity="0.24"/>
+  <text x="146" y="228" fill="#9EF8D7" font-family="Inter, Segoe UI, sans-serif" font-size="19">Review Pipelines</text>
+  <rect x="146" y="248" width="248" height="62" rx="10" fill="#123025" stroke="#74E8C3" stroke-opacity="0.45"/>
+  <text x="164" y="276" fill="#DDFEF2" font-family="Inter, Segoe UI, sans-serif" font-size="15">Static Analysis Agent</text>
+  <text x="164" y="296" fill="#A8D9C4" font-family="Inter, Segoe UI, sans-serif" font-size="12">Complexity, maintainability, quality</text>
+
+  <rect x="146" y="326" width="248" height="62" rx="10" fill="#123025" stroke="#74E8C3" stroke-opacity="0.45"/>
+  <text x="164" y="354" fill="#DDFEF2" font-family="Inter, Segoe UI, sans-serif" font-size="15">Security Analysis Agent</text>
+  <text x="164" y="374" fill="#A8D9C4" font-family="Inter, Segoe UI, sans-serif" font-size="12">OWASP, SQL injection, hardcoded secrets</text>
+
+  <rect x="146" y="404" width="248" height="62" rx="10" fill="#123025" stroke="#74E8C3" stroke-opacity="0.45"/>
+  <text x="164" y="432" fill="#DDFEF2" font-family="Inter, Segoe UI, sans-serif" font-size="15">Style and Architecture Agent</text>
+  <text x="164" y="452" fill="#A8D9C4" font-family="Inter, Segoe UI, sans-serif" font-size="12">Consistency, layering, design patterns</text>
+
+  <rect x="146" y="482" width="248" height="62" rx="10" fill="#123025" stroke="#74E8C3" stroke-opacity="0.45"/>
+  <text x="164" y="510" fill="#DDFEF2" font-family="Inter, Segoe UI, sans-serif" font-size="15">LangGraph Orchestrator</text>
+  <text x="164" y="530" fill="#A8D9C4" font-family="Inter, Segoe UI, sans-serif" font-size="12">Parallel fan-out with merged findings</text>
+
+  <rect x="146" y="572" width="248" height="110" rx="10" fill="#0C1A15" stroke="#6FE4BD" stroke-opacity="0.26"/>
+  <text x="164" y="602" fill="#B8F8DD" font-family="Inter, Segoe UI, sans-serif" font-size="14">Infra Snapshot</text>
+  <text x="164" y="626" fill="#CFECE0" font-family="Inter, Segoe UI, sans-serif" font-size="12">AWS EKS  |  Docker/ECR</text>
+  <text x="164" y="646" fill="#CFECE0" font-family="Inter, Segoe UI, sans-serif" font-size="12">PostgreSQL  |  Redis  |  S3</text>
+  <text x="164" y="666" fill="#CFECE0" font-family="Inter, Segoe UI, sans-serif" font-size="12">LangFuse  |  Prometheus/Grafana</text>
+
+  <rect x="446" y="192" width="1034" height="412" rx="16" fill="#0D1D17" stroke="#70E3BD" stroke-opacity="0.24"/>
+  <text x="476" y="228" fill="#9CF7D6" font-family="Inter, Segoe UI, sans-serif" font-size="19">GitHub Pull Request - Files Changed</text>
+
+  <rect x="476" y="252" width="974" height="48" rx="10" fill="#122C23" stroke="#71E8C1" stroke-opacity="0.3"/>
+  <text x="500" y="282" fill="#DDFEF2" font-family="Inter, Segoe UI, sans-serif" font-size="14">src/services/reviewer.py</text>
+  <text x="1148" y="282" fill="#9CECD0" font-family="Inter, Segoe UI, sans-serif" font-size="13">+124  -18</text>
+  <text x="1258" y="282" fill="#80E9C4" font-family="Inter, Segoe UI, sans-serif" font-size="13">Reviewed</text>
+
+  <rect x="476" y="318" width="974" height="250" rx="10" fill="#0A1713" stroke="#69DAB5" stroke-opacity="0.18"/>
+  <rect x="500" y="346" width="440" height="194" rx="8" fill="#10261D"/>
+  <text x="520" y="374" fill="#9EF7D8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">- query = "SELECT * FROM users WHERE id='" + input + "'"</text>
+  <text x="520" y="398" fill="#8BECCB" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">+ query = "SELECT * FROM users WHERE id = %s"</text>
+  <text x="520" y="422" fill="#8BECCB" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">+ cursor.execute(query, (user_id,))</text>
+  <text x="520" y="446" fill="#9EF7D8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">- api_key = "sk-prod-abc123"</text>
+  <text x="520" y="470" fill="#8BECCB" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">+ api_key = os.environ.get("PROD_API_KEY")</text>
+
+  <rect x="964" y="346" width="462" height="194" rx="8" fill="#11271E" stroke="#70E3BD" stroke-opacity="0.24"/>
+  <text x="988" y="374" fill="#E9FFF6" font-family="Inter, Segoe UI, sans-serif" font-size="14">Inline AI Findings</text>
+  <text x="988" y="402" fill="#F5A5A5" font-family="Inter, Segoe UI, sans-serif" font-size="13">Critical: SQL injection risk in dynamic query builder</text>
+  <text x="988" y="426" fill="#FFD48A" font-family="Inter, Segoe UI, sans-serif" font-size="13">High: hardcoded secret found in configuration path</text>
+  <text x="988" y="450" fill="#9EDDBF" font-family="Inter, Segoe UI, sans-serif" font-size="13">Medium: function complexity above team threshold</text>
+  <text x="988" y="474" fill="#9EDDBF" font-family="Inter, Segoe UI, sans-serif" font-size="13">Style: import ordering and naming convention drift</text>
+  <text x="988" y="498" fill="#9EDDBF" font-family="Inter, Segoe UI, sans-serif" font-size="13">Architecture: service boundary leak in controller</text>
+
+  <path d="M360 355H1030" stroke="url(#line)" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="446" y="628" width="496" height="252" rx="16" fill="#0E2019" stroke="#70E3BD" stroke-opacity="0.24"/>
+  <text x="476" y="666" fill="#A5F7D8" font-family="Inter, Segoe UI, sans-serif" font-size="18">Severity Distribution</text>
+  <rect x="476" y="692" width="436" height="24" rx="12" fill="#122B22"/>
+  <rect x="476" y="692" width="118" height="24" rx="12" fill="#F66A6A"/>
+  <rect x="594" y="692" width="174" height="24" fill="#F2B25A"/>
+  <rect x="768" y="692" width="144" height="24" rx="12" fill="#70E3BD"/>
+  <text x="476" y="740" fill="#D7F6E9" font-family="Inter, Segoe UI, sans-serif" font-size="13">Critical 4</text>
+  <text x="610" y="740" fill="#D7F6E9" font-family="Inter, Segoe UI, sans-serif" font-size="13">High 9</text>
+  <text x="718" y="740" fill="#D7F6E9" font-family="Inter, Segoe UI, sans-serif" font-size="13">Medium 12</text>
+
+  <rect x="978" y="628" width="502" height="252" rx="16" fill="#0E2019" stroke="#70E3BD" stroke-opacity="0.24"/>
+  <text x="1008" y="666" fill="#A5F7D8" font-family="Inter, Segoe UI, sans-serif" font-size="18">PR Feedback Timeline</text>
+  <text x="1008" y="694" fill="#D2EDE0" font-family="Inter, Segoe UI, sans-serif" font-size="13">Webhook received</text>
+  <text x="1008" y="718" fill="#D2EDE0" font-family="Inter, Segoe UI, sans-serif" font-size="13">Parallel agent analysis complete</text>
+  <text x="1008" y="742" fill="#D2EDE0" font-family="Inter, Segoe UI, sans-serif" font-size="13">Inline comments posted to GitHub PR</text>
+  <text x="1008" y="766" fill="#D2EDE0" font-family="Inter, Segoe UI, sans-serif" font-size="13">Merged PR pattern learning updated</text>
+  <text x="1008" y="804" fill="#95ECCC" font-family="Inter, Segoe UI, sans-serif" font-size="13">Observability: LangFuse traces and Grafana metrics healthy</text>
+</svg>
